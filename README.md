@@ -85,6 +85,12 @@ gcc organiza_dados.c -o organiza_dados
 gcc consulta_instante.c -o consulta_instante
 gcc gera_arquivo_teste.c -o gera_arquivo_teste
 
+Ordem dos programas:
+Para facilitar o entendimento e execução do código:
+-Programa 3 (Gerar arquivo teste)
+-Programa 1 (Organizar os dados)
+-Programa 2 (Consultar os dados)
+
 - Possíveis Problemas (e Como Resolver)
 Problema, causa	e Solução:
 Erro: Arquivo não encontrado	Caminho ou nome de arquivo errado	Verifique se o nome e a localização do arquivo estão corretos
