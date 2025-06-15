@@ -87,9 +87,9 @@ gcc gera_arquivo_teste.c -o gera_arquivo_teste
 
 Ordem dos programas:
 Para facilitar o entendimento e execução do código:
--Programa 3 (Gerar arquivo teste)
--Programa 1 (Organizar os dados)
--Programa 2 (Consultar os dados)
+-Programa 3 (Gerador.c)
+-Programa 1 (Organizador.c)
+-Programa 2 (Consulta.c)
 
 - Possíveis Problemas (e Como Resolver)
 Problema, causa	e Solução:
