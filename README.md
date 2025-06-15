@@ -1,9 +1,11 @@
-# Codigos em C
+# Codigos em C - Estrutura de Dados
+Feito por: Mateus Vitor Venâncio de Deus
+Professor: Zoé Roberto Magalhães Júnior
+
 Estruturas de Dados em C - Organização, criação e consulta de sensores.
+ N1 AT2
 
-Mateus Vitor Venâncio de Deus
-
-Sistema de Monitoramento e Consulta de Sensores Industriais
+Projeto Sistema de Monitoramento e Consulta de Sensores Industriais
 
 O porque do projeto:
 Organizar grandes volumes de dados de sensores industriais
@@ -58,19 +60,19 @@ Gera um arquivo com 2000 registros por sensor, com timestamps aleatórios dentro
 
 Tipos de dados suportados por sensor:
 
-int → Número inteiro aleatório
+- int → Número inteiro aleatório
 
-bool → true ou false
+- bool → true ou false
 
-float → Número decimal
+- float → Número decimal
 
-string → Texto aleatório com até 16 letras
+- string → Texto aleatório com até 16 letras
 
 Como compilar: gcc gera_arquivo_teste.c -o gera_arquivo_teste
 
 Como executar: ./gera_arquivo_teste <data_inicio> <data_fim> <sensor1> <tipo_dado1> [<sensor2> <tipo_dado2> ...] <arquivo_saida>
 
-Exemplo real: ./gera_arquivo_teste 01/06/2025_00:00:00 10/06/2025_23:59:59 sensor1 int sensor2 bool sensor3 float teste.txt
+Exemplo real: ./gera_arquivo_teste 16/06/2025_11:19:12 10/06/2025_23:59:59 sensor1 int sensor2 bool sensor3 float teste.txt
 
 Saída:
 Um arquivo como teste.txt, contendo linhas como:
