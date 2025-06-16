@@ -17,8 +17,8 @@ Gerar arquivos de teste com milhares de medições simuladas
 
 🟢 Visão Geral dos Programas:
 
-Organizador.c - Organiza os dados brutos por sensor e ordena por timestamp
-Consulta.c - Permite buscar a leitura mais próxima de um timestamp específico
+Organizador.c - Organiza os dados brutos por sensor e ordena por timestamp \
+Consulta.c - Permite buscar a leitura mais próxima de um timestamp específico \
 Gerador.c - Cria arquivos de teste com sensores e dados aleatórios
 
 ⚪ Como Funciona Cada Programa: 
@@ -64,10 +64,10 @@ Utiliza busca binária para garantir rapidez mesmo com grandes volumes de dados.
 Gera um arquivo de teste com 2000 registros por sensor, com timestamps aleatórios dentro de um intervalo de tempo definido.
 
 * Tipos de dados suportados por sensor:
-int - Número inteiro aleatório
-bool - true ou false
-float - Número decimal aleatório
-string - Texto aleatório com até 16 caracteres
+int - Número inteiro aleatório\
+bool - true ou false\
+float - Número decimal aleatório\
+string - Texto aleatório com até 16 caracteres\
 
 **Como executar:**
 ./Gerador <data_inicio> <data_fim> <sensor1> <tipo_dado1> [<sensor2> <tipo_dado2> ...] <arquivo_saida>
