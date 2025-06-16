@@ -1,5 +1,7 @@
 Códigos em C - Estrutura de Dados
+
 Feito por: Mateus Vitor Venâncio de Deus
+
 Professor: Zoé Roberto Magalhães Júnior
 
 Estruturas de Dados em C - Organização, Gerador e consulta de sensores.
