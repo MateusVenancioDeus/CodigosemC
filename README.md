@@ -67,7 +67,7 @@ Gera um arquivo de teste com 2000 registros por sensor, com timestamps aleatóri
 int - Número inteiro aleatório\
 bool - true ou false\
 float - Número decimal aleatório\
-string - Texto aleatório com até 16 caracteres\
+string - Texto aleatório com até 16 caracteres
 
 **Como executar:**
 ./Gerador <data_inicio> <data_fim> <sensor1> <tipo_dado1> [<sensor2> <tipo_dado2> ...] <arquivo_saida>
@@ -77,27 +77,27 @@ Exemplo de uso:
 
 🟨 Saída:
 Gera um arquivo como teste.txt contendo linhas como:
-1718429342 sensor1 512
-1718429345 sensor2 true
+1718429342 sensor1 512 \
+1718429345 sensor2 true \
 1718429347 sensor3 15.75
 
 Compilação dos programas:
-gcc Organizador.c -o Organizador
-gcc Consulta.c -o Consulta
+gcc Organizador.c -o Organizador \
+gcc Consulta.c -o Consulta \
 gcc Gerador.c -o Gerador
 
 **Ordem de Execução:**
-Programa 3 - Gerador.c
-Programa 1 - Organizador.c
+Programa 3 - Gerador.c \
+Programa 1 - Organizador.c \
 Programa 2 - Consulta.c
 
 * Possíveis Problemas e Como Resolver:
 
-Erro: Arquivo não encontrado
-Causa: Caminho ou nome de arquivo incorreto
+Erro: Arquivo não encontrado \
+Causa: Caminho ou nome de arquivo incorreto \
 Solução: Verifique o nome e a localização do arquivo
 
-Formato de data inválido
-Causa: Formato de data/hora digitado errado
+Formato de data inválido \
+Causa: Formato de data/hora digitado errado \
 ✅Forma correta: Use o formato dd/mm/aaaa_hh:mm:ss✅
 
