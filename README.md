@@ -1,10 +1,10 @@
 **_Códigos em C - Estrutura de Dados_**
 
-Feito por: Mateus Vitor Venâncio de Deus
+**Feito por: Mateus Vitor Venâncio de Deus**
 
--Professor: Zoé Roberto Magalhães Júnior
+**Professor: Zoé Roberto Magalhães Júnior**
 
-Estruturas de Dados em C - Organização, Gerador e consulta de sensores.
+**Estruturas de Dados em C - Organização, Gerador e consulta de sensores.**
 N1 AT2
 
 Projeto Sistema de Monitoramento e Consulta de Sensores Industriais
@@ -24,7 +24,7 @@ Gerador.c - Cria arquivos de teste com sensores e dados aleatórios
 
 * Como Funciona Cada Programa
 
-- Programa 1 - Organizador.c
+**Programa 1 - Organizador.c**
 
 O que ele faz:
 Lê um arquivo contendo dados misturados de vários sensores e separa em arquivos individuais por sensor, ordenando por timestamp.
@@ -45,7 +45,7 @@ Como executar:
 Saída:
 Arquivos como sensor1.txt, sensor2.txt, cada um contendo as leituras ordenadas por data.
 
-- Programa 2 - Consulta.c
+**Programa 2 - Consulta.c**
 
 O que ele faz:
 Permite consultar a leitura mais próxima de um determinado timestamp para um sensor específico.
@@ -59,7 +59,7 @@ Exibe a leitura mais próxima ao timestamp informado dentro do arquivo sensor1.t
 Importante:
 Utiliza busca binária para garantir rapidez mesmo com grandes volumes de dados.
 
-- Programa 3 - Gerador.c
+**Programa 3 - Gerador.c**
 
 O que ele faz:
 Gera um arquivo de teste com 2000 registros por sensor, com timestamps aleatórios dentro de um intervalo de tempo definido.
@@ -70,7 +70,7 @@ bool - true ou false
 float - Número decimal aleatório
 string - Texto aleatório com até 16 caracteres
 
-Como executar:
+**Como executar:**
 ./Gerador <data_inicio> <data_fim> <sensor1> <tipo_dado1> [<sensor2> <tipo_dado2> ...] <arquivo_saida>
 
 Exemplo de uso:
@@ -87,7 +87,7 @@ gcc Organizador.c -o Organizador
 gcc Consulta.c -o Consulta
 gcc Gerador.c -o Gerador
 
-Ordem de Execução:
+**Ordem de Execução:**
 Programa 3 - Gerador.c
 Programa 1 - Organizador.c
 Programa 2 - Consulta.c
