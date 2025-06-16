@@ -1,4 +1,4 @@
-*Códigos em C - Estrutura de Dados
+** Códigos em C - Estrutura de Dados **
 
 Feito por: Mateus Vitor Venâncio de Deus
 
