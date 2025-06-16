@@ -4,7 +4,7 @@
 
 **Professor: Zoé Roberto Magalhães Júnior**
 
-🧑‍💻**Estruturas de Dados em C - Organização, Gerador e consulta de sensores.**🧑‍💻
+**Estruturas de Dados em C - Organização, Gerador e consulta de sensores.**
 N1 AT2
 
 🟡 Projeto Sistema de Monitoramento e Consulta de Sensores Industriais 🟡 
