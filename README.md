@@ -1,6 +1,6 @@
-#Códigos em C - Estrutura de Dados
+*Códigos em C - Estrutura de Dados
 
--Feito por: Mateus Vitor Venâncio de Deus
+Feito por: Mateus Vitor Venâncio de Deus
 
 -Professor: Zoé Roberto Magalhães Júnior
 
