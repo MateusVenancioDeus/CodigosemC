@@ -11,7 +11,7 @@ N1 AT2
 
 ⚪ Objetivo:
 
-Organizar grandes volumes de dados de sensores industriais
+Organizar grandes volumes de dados de sensores industriais \br
 Consultar rapidamente qualquer leitura por instante de tempo
 Gerar arquivos de teste com milhares de medições simuladas
 
