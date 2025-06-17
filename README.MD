@@ -18,7 +18,7 @@ Programas
 1. Organizador 
 Responsável por organizar os dados brutos de sensores em arquivos separados para cada tipo de sensor. Os dados são ordenados em ordem decrescente de timestamp.
 
-Como executar:\
+Como executar: \
 
 bash
 Copiar
