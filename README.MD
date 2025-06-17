@@ -22,10 +22,10 @@ Editar
 ./organizador <arquivo_entrada>
 <arquivo_entrada>: arquivo que contém os dados brutos não organizados.
 
-2. Consulta por Instante
+**2. Consulta por Instante**
 Realiza a busca binária em arquivos organizados para encontrar a leitura do sensor mais próxima a um timestamp fornecido pelo usuário.
 
-Como executar:
+**Como executar:**
 
 bash
 Copiar
@@ -37,10 +37,10 @@ Editar
 
 O programa retorna o valor registrado mais próximo do timestamp informado.
 
-3. Gerador de Arquivos\
+3. Gerador de Arquivos \
 Gera arquivos de dados simulados para sensores, com registros aleatórios entre duas datas e horários definidos, para os sensores e tipos especificados.
 
-Como executar:
+**Como executar:**
 
 bash
 Copiar
