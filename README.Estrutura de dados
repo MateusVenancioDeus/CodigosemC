@@ -1,64 +1,134 @@
-**Projeto: Manipulação de Dados de Sensores Industriais** \
-Professor: Zoe Magalhães \
-Aluno: Mateus Vitor Venâncio de Deus 
+Códigos em C - Estrutura de Dados
+Feito por: Mateus Vitor Venâncio de Deus
+Professor: Zoé Roberto Magalhães Júnior
 
-Objetivo: \
-Este projeto apresenta três programas desenvolvidos em linguagem C para manipulação eficiente de dados provenientes de sensores industriais. Os programas permitem organizar, consultar e gerar arquivos de dados de sensores com diferentes tipos. 
+Estruturas de Dados em C - Organização, Gerador e Consulta de Sensores - N1 AT2
 
-**Sensores suportados** \
-CONJ_Z: dados do tipo inteiro 
+🟡 Projeto: Sistema de Monitoramento e Consulta de Sensores Industriais 🟡
 
-CONJ_Q: dados do tipo float 
+⚪ Objetivo:
 
-TEXTO: dados do tipo string 
+Organizar grandes volumes de dados de sensores industriais
 
-BINARIO: dados do tipo booleano (true/false)
+Consultar rapidamente qualquer leitura por instante de tempo
 
-**Programas**
-1. Organizador 
-Responsável por organizar os dados brutos de sensores em arquivos separados para cada tipo de sensor. Os dados são ordenados em ordem decrescente de timestamp.
+Gerar arquivos de teste com milhares de medições simuladas
 
-**Como executar:**
+🟢 Visão Geral dos Programas:
 
-./Organizador <arquivo_entrada>
-<arquivo_entrada>: arquivo que contém os dados brutos não organizados.
+Organizador.c → Organiza os dados brutos por sensor e ordena por timestamp
 
-**2. Consulta por Instante**
-Realiza a busca binária em arquivos organizados para encontrar a leitura do sensor mais próxima a um timestamp fornecido pelo usuário.
+Consulta.c → Permite buscar a leitura mais próxima de um timestamp específico
 
-**Como executar:**
+Gerador.c → Cria arquivos de teste com sensores e dados aleatórios
 
-./Consulta <SENSOR> <TIMESTAMP> \
-<SENSOR>: nome do sensor (CONJ_Z, CONJ_Q, TEXTO ou BINARIO)
+⚪ Como Funciona Cada Programa:
 
-<TIMESTAMP>: instante em segundos desde 01/01/1970 (Epoch) 
+Programa 1 - Organizador.c
+🟦 O que ele faz:
+Lê um arquivo contendo dados misturados de vários sensores e separa em arquivos individuais por sensor, ordenando por timestamp de forma decrescente.
 
-O programa retorna o valor registrado mais próximo do timestamp informado.
+Formato de entrada:
+<ID_SENSOR>
 
-3. Gerador de Arquivos \
-Gera arquivos de dados simulados para sensores, com registros aleatórios entre duas datas e horários definidos, para os sensores e tipos especificados.
+Exemplo de linha no arquivo:
 
-**Como executar:**
+arduino
+Copiar
+Editar
+1718429342 CONJ_Z 100
+1718429350 BINARIO true
+Como compilar:
 
-./Gerador <data_hora_inicial> <data_hora_final> <sensor1> <tipo1> [<sensor2> <tipo2> ...] <arquivo_saida> \
-<data_hora_inicial> e <data_hora_final>: no formato dd/mm/aaaa_HH:MM:SS
+bash
+Copiar
+Editar
+gcc Organizador.c -o Organizador
+Como executar:
 
-<sensorX>: nome do sensor (CONJ_Z, CONJ_Q, TEXTO ou BINARIO)
+bash
+Copiar
+Editar
+./Organizador dados_sensores.txt
+🟨 Saída:
+Arquivos como:
 
-<tipoX>: tipo correspondente do sensor
+CONJ_Z.txt
 
-<arquivo_saida>: nome do arquivo onde os dados gerados serão salvos 
+BINARIO.txt
+Cada um contendo as leituras ordenadas por data (timestamp).
 
-O programa gera 2000 registros para cada sensor informado dentro do intervalo de datas.
+Programa 2 - Consulta.c
+🟦 O que ele faz:
+Permite consultar a leitura mais próxima de um determinado timestamp para um sensor específico, utilizando busca binária para garantir rapidez mesmo com grandes volumes de dados.
 
-**Observações importantes** \
-Os arquivos gerados ou utilizados pelos programas devem estar no mesmo diretório dos executáveis ou informar o caminho completo. \
+Como executar:
 
-O timestamp representa a quantidade de segundos desde o início da Era Unix (1 de janeiro de 1970). 
+bash
+Copiar
+Editar
+./Consulta CONJ_Z 1718429342
+Resultado esperado:
+Exibe a leitura mais próxima ao timestamp informado dentro do arquivo correspondente ao sensor.
 
-Validações básicas são feitas para garantir formatos corretos e evitar erros comuns de entrada.
+Programa 3 - Gerador.c
+🟦 O que ele faz:
+Gera um arquivo de teste com 2000 registros por sensor, com timestamps aleatórios dentro de um intervalo de tempo definido pelo usuário.
 
-Para compilar os programas, utilize o GCC: 
-gcc organizador.c -o organizador
-gcc consulta.c -o consulta
-gcc gerador.c -o gerador
+Tipos de dados suportados por sensor:
+
+CONJ_Z → Número inteiro aleatório
+
+BINARIO → true ou false
+
+CONJ_Q → Número decimal aleatório (float)
+
+TEXTO → Texto aleatório com até 16 caracteres
+
+Como executar:
+
+bash
+Copiar
+Editar
+./Gerador <data_inicio> <data_fim> <sensor1> <tipo1> [<sensor2> <tipo2> ...] <arquivo_saida>
+Exemplo de uso:
+
+bash
+Copiar
+Editar
+./Gerador 01/06/2025_00:00:00 10/06/2025_23:59:59 CONJ_Z int BINARIO bool CONJ_Q float TEXTO string teste.txt
+🟨 Saída:
+Gera um arquivo como teste.txt, contendo linhas como:
+
+arduino
+Copiar
+Editar
+1718429342 CONJ_Z 512
+1718429345 BINARIO true
+1718429347 CONJ_Q 15.75
+⚪ Compilação dos Programas:
+
+bash
+Copiar
+Editar
+gcc Organizador.c -o Organizador
+gcc Consulta.c -o Consulta
+gcc Gerador.c -o Gerador
+⚪ Ordem Recomendada de Execução:
+
+Programa 3 - Gerador.c
+
+Programa 1 - Organizador.c
+
+Programa 2 - Consulta.c
+
+⚪ Possíveis Problemas e Como Resolver:
+
+Erro: Arquivo não encontrado
+Causa: Caminho ou nome de arquivo incorreto
+Solução: Verifique o nome e a localização do arquivo
+
+Formato de data inválido
+Causa: Formato de data/hora digitado errado
+✅ Forma correta: Use o formato dd/mm/aaaa_hh:mm:ss ✅
+
