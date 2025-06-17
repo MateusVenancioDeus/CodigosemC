@@ -1,5 +1,5 @@
 **Projeto: Manipulação de Dados de Sensores Industriais** \
-Este projeto apresenta três programas desenvolvidos em linguagem C para manipulação eficiente de dados provenientes de sensores industriais. Os programas permitem organizar, consultar e gerar arquivos de dados de sensores com diferentes tipos. 
+Este projeto apresenta três programas desenvolvidos em linguagem C para manipulação eficiente de dados provenientes de sensores industriais. Os programas permitem organizar, consultar e gerar arquivos de dados de sensores com diferentes tipos. \
 
 **Sensores suportados**
 CONJ_Z: dados do tipo inteiro 
