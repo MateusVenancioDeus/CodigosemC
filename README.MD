@@ -54,7 +54,7 @@ O programa gera 2000 registros para cada sensor informado dentro do intervalo de
 **Observações importantes** \
 Os arquivos gerados ou utilizados pelos programas devem estar no mesmo diretório dos executáveis ou informar o caminho completo. \
 
-O timestamp representa a quantidade de segundos desde o início da Era Unix (1 de janeiro de 1970). \
+O timestamp representa a quantidade de segundos desde o início da Era Unix (1 de janeiro de 1970). 
 
 Validações básicas são feitas para garantir formatos corretos e evitar erros comuns de entrada.
 
