@@ -14,7 +14,7 @@ Programas
 1. Organizador 
 Responsável por organizar os dados brutos de sensores em arquivos separados para cada tipo de sensor. Os dados são ordenados em ordem decrescente de timestamp.
 
-Como executar:\=
+Como executar:\
 
 bash
 Copiar
@@ -30,10 +30,10 @@ Realiza a busca binária em arquivos organizados para encontrar a leitura do sen
 bash
 Copiar
 Editar
-./consulta <SENSOR> <TIMESTAMP>\
+./consulta <SENSOR> <TIMESTAMP> \
 <SENSOR>: nome do sensor (CONJ_Z, CONJ_Q, TEXTO ou BINARIO)
 
-<TIMESTAMP>: instante em segundos desde 01/01/1970 (Epoch)\
+<TIMESTAMP>: instante em segundos desde 01/01/1970 (Epoch) \
 
 O programa retorna o valor registrado mais próximo do timestamp informado.
 
@@ -45,25 +45,25 @@ Gera arquivos de dados simulados para sensores, com registros aleatórios entre 
 bash
 Copiar
 Editar
-./gerador <data_hora_inicial> <data_hora_final> <sensor1> <tipo1> [<sensor2> <tipo2> ...] <arquivo_saida>
+./gerador <data_hora_inicial> <data_hora_final> <sensor1> <tipo1> [<sensor2> <tipo2> ...] <arquivo_saida> \
 <data_hora_inicial> e <data_hora_final>: no formato dd/mm/aaaa_HH:MM:SS
 
 <sensorX>: nome do sensor (CONJ_Z, CONJ_Q, TEXTO ou BINARIO)
 
 <tipoX>: tipo correspondente do sensor
 
-<arquivo_saida>: nome do arquivo onde os dados gerados serão salvos
+<arquivo_saida>: nome do arquivo onde os dados gerados serão salvos 
 
 O programa gera 2000 registros para cada sensor informado dentro do intervalo de datas.
 
-Observações importantes
-Os arquivos gerados ou utilizados pelos programas devem estar no mesmo diretório dos executáveis ou informar o caminho completo.
+**Observações importantes** \
+Os arquivos gerados ou utilizados pelos programas devem estar no mesmo diretório dos executáveis ou informar o caminho completo. \
 
-O timestamp representa a quantidade de segundos desde o início da Era Unix (1 de janeiro de 1970).
+O timestamp representa a quantidade de segundos desde o início da Era Unix (1 de janeiro de 1970). \
 
 Validações básicas são feitas para garantir formatos corretos e evitar erros comuns de entrada.
 
-Para compilar os programas, utilize o GCC:/
+Para compilar os programas, utilize o GCC: /
 
 bash
 Copiar
