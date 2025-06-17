@@ -58,11 +58,7 @@ O timestamp representa a quantidade de segundos desde o início da Era Unix (1 d
 
 Validações básicas são feitas para garantir formatos corretos e evitar erros comuns de entrada.
 
-Para compilar os programas, utilize o GCC: /
-
-bash
-Copiar
-Editar
+Para compilar os programas, utilize o GCC: 
 gcc organizador.c -o organizador
 gcc consulta.c -o consulta
 gcc gerador.c -o gerador
