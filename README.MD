@@ -1,5 +1,5 @@
 **Projeto: Manipulação de Dados de Sensores Industriais** \
-Professor: Zoe Magalhães
+Professor: Zoe Magalhães \
 Aluno: Mateus Vitor Venâncio de Deus \
 Este projeto apresenta três programas desenvolvidos em linguagem C para manipulação eficiente de dados provenientes de sensores industriais. Os programas permitem organizar, consultar e gerar arquivos de dados de sensores com diferentes tipos.
 
