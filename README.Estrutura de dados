@@ -1,9 +1,14 @@
-**Documentação dos Programas C** 
+Documentação dos Programas C
+
+Professor: Zoe magalhaes
+
+Aluno: Mateus Vitor Venancio de Deus
+
 Este repositório contém três programas em C desenvolvidos para simular, organizar e
 consultar dados de sensores. Cada programa tem uma função específica no fluxo de
 dados.
  
-**Como Compilar e Executar**
+Como Compilar e Executar
 Para compilar e executar esses programas, você precisará de um compilador C (como o
 GCC).
 Compilação
@@ -16,7 +21,7 @@ gcc Consulta.c -o Consulta
 Isso criará três executáveis: Gerador , Organizador e Consulta .
 Execução
 
-**1. Gerador**
+1. Gerador
 Descrição: Este programa gera um arquivo de texto contendo leituras de sensores
 simuladas. Ele permite especificar um intervalo de tempo e os tipos de sensores para os
 quais as leituras serão geradas.
@@ -28,13 +33,13 @@ Exemplo:
 ./Gerador "01/01/2023_00:00:00" "31/12/2023_23:59:59" CONJ_Z 2000 CONJ_Q
 2000 TEXTO 2000 BINARIO 2000 dados_sensores.txt
 
-**Tipos de Sensores Válidos:**
+Tipos de Sensores Válidos:
 - CONJ_Z : Valores inteiros.
 - CONJ_Q : Valores de ponto flutuante.
 - TEXTO : Valores de texto (strings aleatórias).
 - BINARIO : Valores binários ( true ou false ).
 
-**2. Organizador**
+2. Organizador
 Descrição: Este programa lê um arquivo de leituras de sensores (gerado pelo Gerador )
 e organiza os dados, criando um arquivo separado para cada tipo de sensor. As leituras
 em cada arquivo de saída são ordenadas por timestamp em ordem decrescente.
