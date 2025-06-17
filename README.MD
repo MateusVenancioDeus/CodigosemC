@@ -1,31 +1,31 @@
 **Projeto: Manipulação de Dados de Sensores Industriais** 
-Este projeto apresenta três programas desenvolvidos em linguagem C para manipulação eficiente de dados provenientes de sensores industriais. Os programas permitem organizar, consultar e gerar arquivos de dados de sensores com diferentes tipos. \
+Este projeto apresenta três programas desenvolvidos em linguagem C para manipulação eficiente de dados provenientes de sensores industriais. Os programas permitem organizar, consultar e gerar arquivos de dados de sensores com diferentes tipos. 
 
 **Sensores suportados**
-CONJ_Z: dados do tipo inteiro /
+CONJ_Z: dados do tipo inteiro 
 
-CONJ_Q: dados do tipo float \
+CONJ_Q: dados do tipo float 
 
-TEXTO: dados do tipo string \
+TEXTO: dados do tipo string 
 
 BINARIO: dados do tipo booleano (true/false)
 
-Programas \
-1. Organizador \
+Programas 
+1. Organizador 
 Responsável por organizar os dados brutos de sensores em arquivos separados para cada tipo de sensor. Os dados são ordenados em ordem decrescente de timestamp.
 
-Como executar:\
+Como executar:\=
 
 bash
 Copiar
 Editar
-./organizador <arquivo_entrada>\
+./organizador <arquivo_entrada>
 <arquivo_entrada>: arquivo que contém os dados brutos não organizados.
 
-2. Consulta por Instante\
+2. Consulta por Instante
 Realiza a busca binária em arquivos organizados para encontrar a leitura do sensor mais próxima a um timestamp fornecido pelo usuário.
 
-Como executar:\
+Como executar:
 
 bash
 Copiar
@@ -40,7 +40,7 @@ O programa retorna o valor registrado mais próximo do timestamp informado.
 3. Gerador de Arquivos\
 Gera arquivos de dados simulados para sensores, com registros aleatórios entre duas datas e horários definidos, para os sensores e tipos especificados.
 
-Como executar:\
+Como executar:
 
 bash
 Copiar
