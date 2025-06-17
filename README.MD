@@ -33,7 +33,7 @@ Editar
 ./consulta <SENSOR> <TIMESTAMP> \
 <SENSOR>: nome do sensor (CONJ_Z, CONJ_Q, TEXTO ou BINARIO)
 
-<TIMESTAMP>: instante em segundos desde 01/01/1970 (Epoch) \
+<TIMESTAMP>: instante em segundos desde 01/01/1970 (Epoch) 
 
 O programa retorna o valor registrado mais próximo do timestamp informado.
 
