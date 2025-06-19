@@ -29,6 +29,7 @@ quais as leituras serão geradas.
 Uso:
 ./Gerador <DATA_INICIO> <DATA_FIM> <TIPO_SENSOR_1> <QUANTIDADE_1> ...
 <TIPO_SENSOR_N> <QUANTIDADE_N> <ARQUIVO_SAIDA>
+
 Exemplo:
 ./Gerador "01/01/2023_00:00:00" "31/12/2023_23:59:59" CONJ_Z 2000 CONJ_Q
 2000 TEXTO 2000 BINARIO 2000 dados_sensores.txt
@@ -49,6 +50,7 @@ Uso:
 
 Exemplo:
 ./Organizador dados_sensores.txt
+
 Após a execução, serão criados arquivos como CONJ_Z.txt , CONJ_Q.txt , TEXTO.txt e
 BINARIO.txt (ou outros, dependendo dos sensor_id presentes no arquivo de entrada),
 cada um contendo as leituras correspondentes.
@@ -61,13 +63,14 @@ com o tipo do sensor.
 
 Uso:
 ./Consulta <TIPO_SENSOR> <TIMESTAMP>
+
 Exemplo:
 ./Consulta CONJ_Z 1672531200
+
 Tipos de Sensores Válidos:
 - CONJ_Z
 - CONJ_Q
 - TEXTO
 - BINARIO
 
-Observação: O TIMESTAMP deve ser um valor numérico (epoch time). Você pode usar
-ferramentas online para converter datas e horas para timestamp, se necessário.
+Observação: O TIMESTAMP deve ser um valor numérico (epoch time).
