@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
 
     while (fgets(line, sizeof(line), file)) {
         lineNum++;
-        line[strcspn(line, "\r\n")] = 0;  // Remove newline
+        line[strcspn(line, "\r\n")] = 0; 
 
         if (count >= capacity) {
             capacity = (capacity == 0) ? 10 : capacity * 2;
@@ -95,12 +95,12 @@ int main(int argc, char *argv[]) {
         int fields = sscanf(line, "%lld %9s %255[^\n]", &ts, sensorFromFile, val);
         if (fields != 3) {
             fprintf(stderr, "Formato inválido na linha %d: '%s'\n", lineNum, line);
-            continue;  // Ignorar linha inválida, não falhar todo o programa
+            continue; 
         }
 
         if (strcmp(sensorFromFile, sensorId) != 0) {
             fprintf(stderr, "Sensor diferente na linha %d: esperado %s, encontrado %s\n", lineNum, sensorId, sensorFromFile);
-            continue;  // Ignorar linhas de outros sensores
+            continue; 
         }
 
         if (ts < 0) {
@@ -124,10 +124,9 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
-    // Ordenar leituras pelo timestamp para garantir busca binária correta
     qsort(readings, count, sizeof(SensorReading), compareTimestamp);
 
-    // Busca binária pelo timestamp mais próximo
+
     int low = 0, high = count - 1, mid;
     SensorReading *found = NULL;
 
@@ -146,7 +145,6 @@ int main(int argc, char *argv[]) {
     }
 
     if (!found) {
-        // Se não encontrou exatamente, escolher o mais próximo
         if (low >= count) found = &readings[count - 1];
         else if (high < 0) found = &readings[0];
         else {
